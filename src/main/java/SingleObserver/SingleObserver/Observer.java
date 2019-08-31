@@ -1,6 +1,6 @@
 package SingleObserver.SingleObserver;
 
-public interface Observer
+public interface Observer<T>
 {
-    void update(Observable object, Object data);
+    void update(Observable observable, T data);
 }

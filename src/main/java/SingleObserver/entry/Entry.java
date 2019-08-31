@@ -14,6 +14,9 @@ public class Entry
             singleton.addObserver(new MyObserver("Observer " + i));
         }
 
+
+        // The separation of the Message setting and the invoking Notification
+        // is quite dangerous. You would set the message without notification - that could be unwanted.
         singleton.sendMessage("Ahoj svete");
         singleton.notifyObservers();
 

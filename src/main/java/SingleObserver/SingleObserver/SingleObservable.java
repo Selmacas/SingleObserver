@@ -7,7 +7,8 @@ public class SingleObservable implements Observable
 // implementace Singleton
     private static final SingleObservable singletonObservable = new SingleObservable();
 
-    private SingleObservable(){};
+    private SingleObservable(){}
+
     public static SingleObservable getInstanceOfSingleObservable()
     {
         return singletonObservable;
@@ -21,6 +22,7 @@ public class SingleObservable implements Observable
     public void sendMessage(String message)
     {
         this.message=message;
+        //At that place, I would call the notifyObserver
     }
     
     @Override
