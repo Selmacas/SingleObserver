@@ -1,6 +1,6 @@
 package SingleObserver.SingleObserver;
 
-public class MyObserver implements Observer
+public class MyObserver implements Observer<String>
 {
     private String message;
     private String name;
@@ -21,9 +21,9 @@ public class MyObserver implements Observer
     }
 
     @Override
-    public void update(Observable object, Object data)
+    public void update(Observable observable, String data)
     {
-        this.message = (String)data;
+        this.message = data;
         System.out.println(name + " obdrzel zpravu " + message);
     }
 }
