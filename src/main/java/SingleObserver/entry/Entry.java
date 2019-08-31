@@ -2,7 +2,6 @@ package SingleObserver.entry;
 
 
 import SingleObserver.SingleObserver.MyObserver;
-import SingleObserver.SingleObserver.Observable;
 import SingleObserver.SingleObserver.SingleObservable;
 
 public class Entry
